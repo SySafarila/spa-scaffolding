@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ContextProvider } from "./Contexts";
 import Middleware from "./Middleware";
+import Login from "./pages/Login";
 
 const ReactRouter = () => {
   return (
@@ -15,6 +16,7 @@ const ReactRouter = () => {
               </div>
             </Middleware>
           </Route>
+          <Route exact path="/login" component={Login} />
         </Switch>
       </BrowserRouter>
     </ContextProvider>
